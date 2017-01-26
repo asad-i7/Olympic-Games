@@ -79,17 +79,24 @@ class olympic // class name
 		"Silver gives 2 points \n" +
 		"Bronze gives 1 point \n" +
 		"Here are the Results"); // shows the user the total medals won in each event
-
-		System.out.println("Country\tGold\tSilver\tBronze\tTotal points"); // displays results in table format
-		System.out.println(countryarray[0] + "\t" + goldarray[0] + "\t" + silverarray[0] + "\t" + bronzearray[0] + "\t" + totalpoints[0]);
-		System.out.println(countryarray[1] + "\t" + goldarray[1] + "\t" + silverarray[1] + "\t" + bronzearray[1] + "\t" + totalpoints[1]);
-		System.out.println(countryarray[2] + "\t" + goldarray[2] + "\t" + silverarray[2] + "\t" + bronzearray[2] + "\t" + totalpoints[2]);
-		System.out.println(countryarray[3] + "\t" + goldarray[3] + "\t" + silverarray[3] + "\t" + bronzearray[3] + "\t" + totalpoints[3]);
-		System.out.println(countryarray[4] + "\t" + goldarray[4] + "\t" + silverarray[4] + "\t" + bronzearray[4] + "\t" + totalpoints[4]);
-		System.out.println(countryarray[5] + "\t" + goldarray[5] + "\t" + silverarray[5] + "\t" + bronzearray[5] + "\t" + totalpoints[5]);
-		System.out.println(countryarray[6] + "\t" + goldarray[6] + "\t" + silverarray[6] + "\t" + bronzearray[6] + "\t" + totalpoints[6]);
-		System.out.println(countryarray[7] + "\t" + goldarray[7] + "\t" + silverarray[7] + "\t" + bronzearray[7] + "\t" + totalpoints[7]);
+                
+                      String tableOutput =
+         "<html><table>" +
+      "<tr><td>Country</td><td>Gold</td><td>Silver</td><td>Bronze</td><td>Total Points</td></tr>" +
+      "<tr><td>" + countryarray[0] + "</td><td>" + goldarray[0] + "</td><td>" + silverarray[0] + "</td><td>" + bronzearray[0] + "</td><td>" + totalpoints[0] + "</td><tr>" +  
+       "<tr><td>" + countryarray[1] + "</td><td>" + goldarray[1] + "</td><td>" + silverarray[1] + "</td><td>" + bronzearray[1] + "</td><td>" + totalpoints[1] + "</td><tr>" +               
+       "<tr><td>" + countryarray[2] + "</td><td>" + goldarray[2] + "</td><td>" + silverarray[2] + "</td><td>" + bronzearray[2] + "</td><td>" + totalpoints[2] + "</td><tr>" +               
+       "<tr><td>" + countryarray[3] + "</td><td>" + goldarray[3] + "</td><td>" + silverarray[3] + "</td><td>" + bronzearray[3] + "</td><td>" + totalpoints[3] + "</td><tr>" +               
+       "<tr><td>" + countryarray[4] + "</td><td>" + goldarray[4] + "</td><td>" + silverarray[4] + "</td><td>" + bronzearray[4] + "</td><td>" + totalpoints[4] + "</td><tr>" +              
+       "<tr><td>" + countryarray[5] + "</td><td>" + goldarray[5] + "</td><td>" + silverarray[5] + "</td><td>" + bronzearray[5] + "</td><td>" + totalpoints[5] + "</td><tr>" +    
+        "<tr><td>" + countryarray[6] + "</td><td>" + goldarray[6] + "</td><td>" + silverarray[6] + "</td><td>" + bronzearray[6] + "</td><td>" + totalpoints[6] + "</td><tr>" +                   
+         "<tr><td>" + countryarray[7] + "</td><td>" + goldarray[7] + "</td><td>" + silverarray[7] + "</td><td>" + bronzearray[7] + "</td><td>" + totalpoints[7] + "</td><tr>";               
+           
+      JOptionPane.showMessageDialog(
+         null, tableOutput);
 		}
+                
+          
 
 	} // ends olympic
 
